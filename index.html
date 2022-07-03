@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/login.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <script src="scripts/login.js"></script>
+        <title>Ingreso</title>
+    </head>
+    <body>
+        <header>
+            <h1>Parcial LPPA</h1>
+            <nav>
+                <a href="#" target="_blank">Inicio</a>
+                <a href="#" target="_blank">Ubicación</a>
+                <a href="#" target="_blank">Quiénes somos</a>
+                <a href="#" target="_blank">Contacto</a>
+            </nav>
+        </header>
+        <form class="form">
+            <h2 class="form-title">Ingreso al sistema</h1>
+                <fieldset class="form-group">
+                    <input class="form-txt" type="text" id="txtEmail" placeholder=" ">
+                    <label class="form-lblTxt" for="txtEmail">E-mail</label>
+                    <label class="form-lblError hidden" for="txtEmail">Por favor ingresar un email valido</label>
+                </fieldset>
+                <fieldset class="form-group"> 
+                    <input class="form-txt" type="password" id="txtPass" placeholder=" ">
+                    <label class="form-lblTxt" for="txtPass">Contraseña</label>
+                    <label class="form-lblError hidden" for="txtPass">La contraseña no es valida</label>
+                </fieldset>
+                <input class="form-btn" type="submit" value="Iniciar sesion" id="ingresar">
+                <label id="lblErrorGeneral" class="form-lblError hidden">Email o contraseña no son validas</label>
+            </div>
+        </form>
+        <footer>
+            <p>
+                Segundo Parcial LPPA ISI UAI (Universidad Abierta Interamericana) 2022
+            </p>
+        </footer>
+    </body>
+</html>
