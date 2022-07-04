@@ -32,12 +32,12 @@
     width: 100%;
     background: none;
     margin-bottom: 8px;
-    color: rgb(112, 108, 108);
+    color: #808080;
     font-size: 16px;
     padding: 5px 3px;
     border:none;
     outline:none;
-    border-bottom: 1px solid rgb(87, 87, 87, 0.49);
+    border-bottom: 1px solid #000000;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .form-lblTxt{
-    color: var(--verdeAgua);
+    color: #000000;
     position:absolute;
     font-size: 15px;
     top:0;
@@ -61,7 +61,7 @@
 
 .form-lblError{
     width: 100%;
-    color:rgb(255, 0, 0);
+    color: #ff0000;
     text-align: center;
 }
 
@@ -74,14 +74,12 @@
     width: 100%;
     background-color: #808080;
     color:#ffffff;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     padding: 12px 0px;
     border: 1px solid;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color .3s;
     margin-top: 8px;
     margin-bottom: 20px;
 }
