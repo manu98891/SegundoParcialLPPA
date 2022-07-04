@@ -8,12 +8,12 @@ function obtenerElementos(){
 window.onload = () =>{
     comprobarSesion();
     obtenerElementos();
-    ocultarLabels();
+    ocultarLabelsError();
     submit.onclick = (e) => {
         e.preventDefault();
         if (validarCampos()) {
             lblEG.classList.toggle("hidden",true);
-            realizarRequest();
+            realizarRequestApi();
         }
     }
 }
@@ -48,7 +48,7 @@ function validarCampos() {
     return validate;
 }
 
-function ocultarLabels(){
+function ocultarLabelsError(){
     email.onfocus = () => {
         email.labels[1].classList.toggle("hidden",true);
         lblEG.classList.toggle("hidden",true);
@@ -59,7 +59,7 @@ function ocultarLabels(){
     }
 }
 
-function realizarRequest(){
+function realizarRequestApi(){
     fetch("https://basic-server-one.vercel.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json"},

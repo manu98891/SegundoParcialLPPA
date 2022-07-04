@@ -9,21 +9,21 @@ window.onload = () => {
         cerrarSesion();
     }
     logout.onclick = cerrarSesion;
-    realizarRequest();
+    realizarRequestApi();
 }
 
-function realizarRequest() {
+function realizarRequestApi() {
     texto.classList.toggle("hidden", false);
     let url = "https://basic-server-one.vercel.app/users";
     fetch(url)
         .then(response => response.json())
         .then(usuarios => {
-            setTimeout(llenarTabla, 500, usuarios.data)
+            setTimeout(llenarTablaDatos, 500, usuarios.data)
         })
         .catch(error => console.log(error))
 }
 
-function llenarTabla(usuarios){
+function llenarTablaDatos(usuarios){
     texto.classList.toggle("hidden", true);
     let head = "<tr><th>Nombre</th><th>Ciudad</th><th>Teléfono</th><th>Nombre de usuario</th><th>Email</th></tr>";
     let body = "";
