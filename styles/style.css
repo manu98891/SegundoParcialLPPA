@@ -47,25 +47,6 @@ header nav a:hover, i:hover{
     cursor: pointer;
 }
 
-footer{
-    width: 100%;
-    height: 50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 15px;
-}
-
-footer p{
-    color: #000000;
-    font-weight: 700;
-    font-style: oblique;
-    text-align: center;
-}
-
 .hidden{
     display:none;
 }
