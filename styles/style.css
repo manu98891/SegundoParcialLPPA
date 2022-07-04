@@ -43,7 +43,7 @@ header nav i{
 }
 
 header nav a:hover, i:hover{
-    color: var(--blanco);
+    color: #ffffff;
     cursor: pointer;
 }
 
