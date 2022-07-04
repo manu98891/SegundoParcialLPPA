@@ -8,5 +8,5 @@ Datos de inicio de sesión
 Email: valeria@gmail.com 
 Contraseña: lppa2022
 
-<Informacion>
+# Informacion
 Esta web consta de un Login para validar usuario y una tabla que muestra los datos de una API
